@@ -1,0 +1,419 @@
+@prefix : <http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197> .
+
+<http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008132
+
+:pkpd_0008132 rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "belongsToFaction"@en ;
+              
+              rdfs:comment "belongsToFaction A B means that A belongs to faction B."@en .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008100
+
+:pkpd_0008100 rdf:type owl:Class ;
+              
+              rdfs:label "ProcessualEntity"@en .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008101
+
+:pkpd_0008101 rdf:type owl:Class ;
+              
+              rdfs:label "SubstantialEntity"@en .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008102
+
+:pkpd_0008102 rdf:type owl:Class ;
+              
+              rdfs:label "Person"@en ;
+              
+              rdfs:subClassOf :pkpd_0008101 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008103
+
+:pkpd_0008103 rdf:type owl:Class ;
+              
+              rdfs:label "Faction"@en ;
+              
+              rdfs:subClassOf :pkpd_0008101 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008104
+
+:pkpd_0008104 rdf:type owl:Class ;
+              
+              rdfs:label "Gear"@en ;
+              
+              rdfs:subClassOf :pkpd_0008101 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008105
+
+:pkpd_0008105 rdf:type owl:Class ;
+              
+              rdfs:label "Weapon"@en ;
+              
+              rdfs:subClassOf :pkpd_0008104 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008106
+
+:pkpd_0008106 rdf:type owl:Class ;
+              
+              rdfs:label "Armor"@en ;
+              
+              rdfs:subClassOf :pkpd_0008104 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008107
+
+:pkpd_0008107 rdf:type owl:Class ;
+              
+              rdfs:label "Hero"@en ;
+              
+              rdfs:subClassOf :pkpd_0008102 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008108
+
+:pkpd_0008108 rdf:type owl:Class ;
+              
+              rdfs:label "Minion"@en ;
+              
+              rdfs:subClassOf :pkpd_0008102 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008109
+
+:pkpd_0008109 rdf:type owl:Class ;
+              
+              rdfs:label "archer"@en ;
+              
+              rdfs:subClassOf :pkpd_0008108 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008110
+
+:pkpd_0008110 rdf:type owl:Class ;
+              
+              rdfs:label "infantry"@en ;
+              
+              rdfs:subClassOf :pkpd_0008108 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008111
+
+:pkpd_0008111 rdf:type owl:Class ;
+              
+              rdfs:label "vanguard"@en ;
+              
+              rdfs:subClassOf :pkpd_0008107 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008112
+
+:pkpd_0008112 rdf:type owl:Class ;
+              
+              rdfs:label "hybrid"@en ;
+              
+              rdfs:subClassOf :pkpd_0008107 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008113
+
+:pkpd_0008113 rdf:type owl:Class ;
+              
+              rdfs:label "heavy"@en ;
+              
+              rdfs:subClassOf :pkpd_0008107 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008114
+
+:pkpd_0008114 rdf:type owl:Class ;
+              
+              rdfs:label "assassin"@en ;
+              
+              rdfs:subClassOf :pkpd_0008107 .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008115
+
+:pkpd_0008115 rdf:type owl:Class ;
+              
+              rdfs:label "warden"@en ;
+              
+              rdfs:subClassOf :pkpd_0008111 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008129
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008116
+
+:pkpd_0008116 rdf:type owl:Class ;
+              
+              rdfs:label "kensei"@en ;
+              
+              rdfs:subClassOf :pkpd_0008111 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008130
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008117
+
+:pkpd_0008117 rdf:type owl:Class ;
+              
+              rdfs:label "raider"@en ;
+              
+              rdfs:subClassOf :pkpd_0008111 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008131
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008118
+
+:pkpd_0008118 rdf:type owl:Class ;
+              
+              rdfs:label "centurion"@en ;
+              
+              rdfs:subClassOf :pkpd_0008112 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008129
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008119
+
+:pkpd_0008119 rdf:type owl:Class ;
+              
+              rdfs:label "lawbringer"@en ;
+              
+              rdfs:subClassOf :pkpd_0008112 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008129
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008120
+
+:pkpd_0008120 rdf:type owl:Class ;
+              
+              rdfs:label "nobushi"@en ;
+              
+              rdfs:subClassOf :pkpd_0008112 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008130
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008121
+
+:pkpd_0008121 rdf:type owl:Class ;
+              
+              rdfs:label "valkyrie"@en ;
+              
+              rdfs:subClassOf :pkpd_0008112 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008131
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008122
+
+:pkpd_0008122 rdf:type owl:Class ;
+              
+              rdfs:label "conqueror"@en ;
+              
+              rdfs:subClassOf :pkpd_0008113 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008129
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008123
+
+:pkpd_0008123 rdf:type owl:Class ;
+              
+              rdfs:label "warlord"@en ;
+              
+              rdfs:subClassOf :pkpd_0008113 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008131
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008124
+
+:pkpd_0008124 rdf:type owl:Class ;
+              
+              rdfs:label "shugoki"@en ;
+              
+              rdfs:subClassOf :pkpd_0008113 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008130
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008125
+
+:pkpd_0008125 rdf:type owl:Class ;
+              
+              rdfs:label "shinobi"@en ;
+              
+              rdfs:subClassOf :pkpd_0008114 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008130
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008126
+
+:pkpd_0008126 rdf:type owl:Class ;
+              
+              rdfs:label "berserker"@en ;
+              
+              rdfs:subClassOf :pkpd_0008114 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008131
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008127
+
+:pkpd_0008127 rdf:type owl:Class ;
+              
+              rdfs:label "orochi"@en ;
+              
+              rdfs:subClassOf :pkpd_0008114 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008130
+                              ] .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008128
+
+:pkpd_0008128 rdf:type owl:Class ;
+              
+              rdfs:label "peacekeeper"@en ;
+              
+              rdfs:subClassOf :pkpd_0008114 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :pkpd_0008132 ;
+                                owl:hasValue :pkpd_0008129
+                              ] .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008129
+
+:pkpd_0008129 rdf:type :pkpd_0008103 ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "knights"@en ,
+                         "chevaliers"@fr .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008130
+
+:pkpd_0008130 rdf:type :pkpd_0008103 ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "samurai"@en .
+
+
+
+###  http://www.semanticweb.org/userdrone/ontologies/2017/4/untitled-ontology-197#pkpd_0008131
+
+:pkpd_0008131 rdf:type :pkpd_0008103 ,
+                       owl:NamedIndividual ;
+              
+              rdfs:label "viking"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
