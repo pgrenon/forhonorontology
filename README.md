@@ -18,8 +18,8 @@ This is a starting prototype for which we carried out:
 
 ## Content of the repository 
 
-- pictures of conceptual modelling on paper, [page 1](doc/FHO-InitialInformalConceptualModelling-Part1.jpg) and [page 2](FHO-InitialInformalConceptualModelling-Part2.jpg)
-- initial OWL encoding covering the sub-categories of Person and the ascription of specific categories to a Faction (instance). This was guided by a graphical formalisation [page 1](doc/FHO-InitialPreOWLEncodingFormalisation.jpg). The initials versions are in the [owl](ontology/owl) directory. Screenshots of FHO-v0.0.3 in Protege illustrate the [class hierarchy](doc/fho-003-ExampleOfClassesAndInstances.png), some instances and a relation as well as a case of [DL query](doc/fho-003-ExampleOfInference.png) where the classes of persons associated with a given factions are derived. 
+- pictures of conceptual modelling on paper, [page 1](doc/FHO-InitialInformalConceptualModelling-Part1.jpg) and [page 2](doc/FHO-InitialInformalConceptualModelling-Part2.jpg)
+- initial OWL encoding covering the sub-categories of Person and the ascription of specific categories to a Faction (instance). This was guided by a graphical formalisation on [paper](doc/FHO-InitialPreOWLEncodingFormalisation.jpg). The initials versions are in the [owl](ontology/owl) directory. Screenshots of FHO-v0.0.3 in Protege illustrate the [class hierarchy](doc/fho-003-ExampleOfClassesAndInstances.png), some instances and a relation as well as a case of [DL query](doc/fho-003-ExampleOfInference.png) where the classes of persons associated with a given factions are derived. 
 
 We used concepts derived from the foundational ontology BFO. 
 
