@@ -1,0 +1,419 @@
+@prefix : <http://www.frogont.org/ontology/fho#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.frogont.org/ontology/fho> .
+
+<http://www.frogont.org/ontology/fho> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008132
+
+:fho_0008132 rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "belongsToFaction"@en ;
+             
+             rdfs:comment "belongsToFaction A B means that A belongs to faction B."@en .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008100
+
+:fho_0008100 rdf:type owl:Class ;
+             
+             rdfs:label "ProcessualEntity"@en .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008101
+
+:fho_0008101 rdf:type owl:Class ;
+             
+             rdfs:label "SubstantialEntity"@en .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008102
+
+:fho_0008102 rdf:type owl:Class ;
+             
+             rdfs:label "Person"@en ;
+             
+             rdfs:subClassOf :fho_0008101 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008103
+
+:fho_0008103 rdf:type owl:Class ;
+             
+             rdfs:label "Faction"@en ;
+             
+             rdfs:subClassOf :fho_0008101 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008104
+
+:fho_0008104 rdf:type owl:Class ;
+             
+             rdfs:label "Gear"@en ;
+             
+             rdfs:subClassOf :fho_0008101 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008105
+
+:fho_0008105 rdf:type owl:Class ;
+             
+             rdfs:label "Weapon"@en ;
+             
+             rdfs:subClassOf :fho_0008104 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008106
+
+:fho_0008106 rdf:type owl:Class ;
+             
+             rdfs:label "Armor"@en ;
+             
+             rdfs:subClassOf :fho_0008104 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008107
+
+:fho_0008107 rdf:type owl:Class ;
+             
+             rdfs:label "Hero"@en ;
+             
+             rdfs:subClassOf :fho_0008102 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008108
+
+:fho_0008108 rdf:type owl:Class ;
+             
+             rdfs:label "Minion"@en ;
+             
+             rdfs:subClassOf :fho_0008102 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008109
+
+:fho_0008109 rdf:type owl:Class ;
+             
+             rdfs:label "archer"@en ;
+             
+             rdfs:subClassOf :fho_0008108 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008110
+
+:fho_0008110 rdf:type owl:Class ;
+             
+             rdfs:label "infantry"@en ;
+             
+             rdfs:subClassOf :fho_0008108 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008111
+
+:fho_0008111 rdf:type owl:Class ;
+             
+             rdfs:label "vanguard"@en ;
+             
+             rdfs:subClassOf :fho_0008107 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008112
+
+:fho_0008112 rdf:type owl:Class ;
+             
+             rdfs:label "hybrid"@en ;
+             
+             rdfs:subClassOf :fho_0008107 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008113
+
+:fho_0008113 rdf:type owl:Class ;
+             
+             rdfs:label "heavy"@en ;
+             
+             rdfs:subClassOf :fho_0008107 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008114
+
+:fho_0008114 rdf:type owl:Class ;
+             
+             rdfs:label "assassin"@en ;
+             
+             rdfs:subClassOf :fho_0008107 .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008115
+
+:fho_0008115 rdf:type owl:Class ;
+             
+             rdfs:label "warden"@en ;
+             
+             rdfs:subClassOf :fho_0008111 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008129
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008116
+
+:fho_0008116 rdf:type owl:Class ;
+             
+             rdfs:label "kensei"@en ;
+             
+             rdfs:subClassOf :fho_0008111 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008130
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008117
+
+:fho_0008117 rdf:type owl:Class ;
+             
+             rdfs:label "raider"@en ;
+             
+             rdfs:subClassOf :fho_0008111 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008131
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008118
+
+:fho_0008118 rdf:type owl:Class ;
+             
+             rdfs:label "centurion"@en ;
+             
+             rdfs:subClassOf :fho_0008112 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008129
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008119
+
+:fho_0008119 rdf:type owl:Class ;
+             
+             rdfs:label "lawbringer"@en ;
+             
+             rdfs:subClassOf :fho_0008112 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008129
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008120
+
+:fho_0008120 rdf:type owl:Class ;
+             
+             rdfs:label "nobushi"@en ;
+             
+             rdfs:subClassOf :fho_0008112 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008130
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008121
+
+:fho_0008121 rdf:type owl:Class ;
+             
+             rdfs:label "valkyrie"@en ;
+             
+             rdfs:subClassOf :fho_0008112 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008131
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008122
+
+:fho_0008122 rdf:type owl:Class ;
+             
+             rdfs:label "conqueror"@en ;
+             
+             rdfs:subClassOf :fho_0008113 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008129
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008123
+
+:fho_0008123 rdf:type owl:Class ;
+             
+             rdfs:label "warlord"@en ;
+             
+             rdfs:subClassOf :fho_0008113 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008131
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008124
+
+:fho_0008124 rdf:type owl:Class ;
+             
+             rdfs:label "shugoki"@en ;
+             
+             rdfs:subClassOf :fho_0008113 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008130
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008125
+
+:fho_0008125 rdf:type owl:Class ;
+             
+             rdfs:label "shinobi"@en ;
+             
+             rdfs:subClassOf :fho_0008114 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008130
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008126
+
+:fho_0008126 rdf:type owl:Class ;
+             
+             rdfs:label "berserker"@en ;
+             
+             rdfs:subClassOf :fho_0008114 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008131
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008127
+
+:fho_0008127 rdf:type owl:Class ;
+             
+             rdfs:label "orochi"@en ;
+             
+             rdfs:subClassOf :fho_0008114 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008130
+                             ] .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008128
+
+:fho_0008128 rdf:type owl:Class ;
+             
+             rdfs:label "peacekeeper"@en ;
+             
+             rdfs:subClassOf :fho_0008114 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :fho_0008132 ;
+                               owl:hasValue :fho_0008129
+                             ] .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008129
+
+:fho_0008129 rdf:type :fho_0008103 ,
+                      owl:NamedIndividual ;
+             
+             rdfs:label "knights"@en ,
+                        "chevaliers"@fr .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008130
+
+:fho_0008130 rdf:type :fho_0008103 ,
+                      owl:NamedIndividual ;
+             
+             rdfs:label "samurai"@en .
+
+
+
+###  http://www.frogont.org/ontology/fho#fho_0008131
+
+:fho_0008131 rdf:type :fho_0008103 ,
+                      owl:NamedIndividual ;
+             
+             rdfs:label "viking"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
